@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1> <%= kindOfDay %> </h1>
+    <ul>
+    <%  for( var i=0; i< newItems.length ; i++){ %>
+      <li> <%=newItems[i]%> </li>
+    <%  } %>
+      <form action="/" method="post">
+        <input type="text" name="newItems" placeholder="Add a task">
+        <button type="submit" name="button">Add Task</button>
+      </form>
+    </ul>
+  </body>
+</html>
